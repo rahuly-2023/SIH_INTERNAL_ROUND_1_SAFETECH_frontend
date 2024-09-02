@@ -12,6 +12,9 @@ import Invoice from './pages/Invoice';
 import Dashboard from './pages/Dashboard';
 import SelfCheckup from './pages/SelfCheckup';
 
+import PatientDetails from './pages/PatientDetail';
+import EditPatient from './pages/EditPatientForm';
+
 
 function App() {
   const[Loading,SetLoading]=useState(true);
@@ -33,7 +36,8 @@ function App() {
             <Route path='/dashboard' element={<Dashboard/>}></Route>
             <Route path='/ContactUs' element={<ContactUs/>}></Route>
             <Route path='/SelfCheckup' element={<SelfCheckup/>}></Route>
-           
+            <Route path='/patient/:id' element={<PatientDetails />} />
+            <Route path='/edit-patient/:id' element={<EditPatient />} />
             
         </Routes>
         </BrowserRouter>
