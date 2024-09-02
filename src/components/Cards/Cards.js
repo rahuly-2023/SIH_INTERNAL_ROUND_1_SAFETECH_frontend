@@ -56,7 +56,7 @@ const Cards = () => {
         Your personalised Doctor available 24/7 to help and prescribe you.
         </div>
           <div className='flex justify-end gap-6'>
-          <div className='card-link'><a href='/ContactUs'>Talk Now</a></div>
+          <div className='card-link'><a href='#'>Talk Now</a></div>
           </div>
       </div>
 
